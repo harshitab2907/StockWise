@@ -2,7 +2,7 @@ package com.stockwise.model;
 
 /**
  * Represents the lifecycle status of a student demand request.
- * Assigned to: Sedhat (Demand Management)
+ * Assigned to: Sidak (Demand Management)
  */
 public enum DemandStatus {
     PENDING("Pending"),

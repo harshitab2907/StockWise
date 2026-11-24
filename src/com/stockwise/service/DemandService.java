@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * Service orchestrating student demand requests, approvals, issues, and rejections.
  * Enforces atomic stock deductions and audit trail consistency.
- * Assigned to: Sedhat (Demand Management)
+ * Assigned to: Sidak (Demand Management)
  */
 public class DemandService {
 

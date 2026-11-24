@@ -6,7 +6,7 @@ import java.util.Objects;
 
 /**
  * Represents a student request for an inventory item.
- * Assigned to: Sedhat (Demand Management)
+ * Assigned to: Sidak (Demand Management)
  */
 public class DemandRecord {
     private String demandId;

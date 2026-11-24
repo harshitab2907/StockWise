@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 /**
  * In-memory thread-safe implementation of DemandRepository.
- * Assigned to: Janvi / Sedhat
+ * Assigned to: Janvi / Sidak
  */
 public class InMemoryDemandRepository implements DemandRepository {
     private final Map<String, DemandRecord> demandStore = new LinkedHashMap<>();

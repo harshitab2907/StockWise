@@ -7,7 +7,7 @@ Developed as an academic software engineering project by a 4-member undergraduat
 - **Harshita** — Demand Prediction & Forecasting
 - **Janvi** — Shared Data Architecture & Repository Contracts
 - **Anmol** — Inventory Management & Stock Alerts
-- **Sedhat** — Student & Demand Request Management
+- **Sidak** — Student & Demand Request Management
 
 ---
 
@@ -201,13 +201,13 @@ StockWise/
 - Supports adding stock (replenishment) and manual stock adjustment (physical audit corrections) with automatic audit entries.
 - Rejects deleting items that have dependent demand records.
 
-### Module B: Student Management (Sedhat)
+### Module B: Student Management (Sidak)
 - Enrolls students with Student ID, Full Name, Roll Number, Academic Department, Email, and Phone.
 - Enforces uniqueness constraints on both Student ID and Roll Number.
 - Validates email (`user@domain.com`) and phone number formatting.
 - Prevents unsafe deletion of students who have active or past demand records.
 
-### Module C: Demand Management (Sedhat)
+### Module C: Demand Management (Sidak)
 - Allows students to log hardware demand requests with status defaulting to `PENDING`.
 - **Atomic Approval & Issuance:**
   1. Verifies demand exists and is `PENDING`.
@@ -293,7 +293,7 @@ Each team member has dedicated ownership of specific components, matching the te
                   +--------------------------------+
                     /          |           |         \
                    /           |           |          \
-     harshita-prediction  janvi-database  anmol-inventory  sedhat-demand
+     harshita-prediction  janvi-database  anmol-inventory  sidak-demand
 ```
 
 ### Member 1: Harshita
@@ -335,8 +335,8 @@ Each team member has dedicated ownership of specific components, matching the te
   - `test/com/stockwise/InventoryServiceTest.java`
   - `test/com/stockwise/StockHistoryTest.java`
 
-### Member 4: Sedhat
-- **Branch:** `sedhat-demand`
+### Member 4: Sidak
+- **Branch:** `sidak-demand`
 - **Assigned Files:**
   - `src/com/stockwise/model/Student.java`
   - `src/com/stockwise/model/DemandRecord.java`

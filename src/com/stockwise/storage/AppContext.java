@@ -133,8 +133,8 @@ public class AppContext {
         studentService.addStudent("STU-1003", "Anmol Singh", "ECE2024-015",
                 "Electronics & Comm", "anmol.singh@college.edu", "9876543212");
 
-        studentService.addStudent("STU-1004", "Sedhat Khan", "ME2024-022",
-                "Mechanical Engg", "sedhat.khan@college.edu", "9876543213");
+        studentService.addStudent("STU-1004", "Sidak Khan", "ME2024-022",
+                "Mechanical Engg", "sidak.khan@college.edu", "9876543213");
 
         studentService.addStudent("STU-1005", "Priya Patel", "CS2024-035",
                 "Computer Science", "priya.patel@college.edu", "9876543214");

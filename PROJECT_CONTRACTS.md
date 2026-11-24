@@ -32,7 +32,7 @@ graph TD
 | **Harshita** | Demand Prediction & Forecasting | `Prediction.java`, `HistoricalDemand.java`, `PredictionStatus.java`, `PredictionService.java`, `PredictionRepository.java`, `HistoricalDemandRepository.java` |
 | **Janvi** | Shared Data Architecture & Contracts | `AppContext.java`, Repository Interfaces, In-Memory Storage Coordination, `IDGenerator.java`, Data Consistency |
 | **Anmol** | Inventory Management & Stock Alerts | `Inventory.java`, `StockStatus.java`, `StockHistory.java`, `TransactionType.java`, `InventoryService.java`, `StockAlertService.java` |
-| **Sedhat** | Student & Demand Management | `Student.java`, `DemandRecord.java`, `DemandStatus.java`, `StudentService.java`, `DemandService.java` |
+| **Sidak** | Student & Demand Management | `Student.java`, `DemandRecord.java`, `DemandStatus.java`, `StudentService.java`, `DemandService.java` |
 
 ---
 
@@ -56,7 +56,7 @@ Represents a physical SKU held in the college inventory.
   - `public StockStatus getStockStatus()`: Returns `IN_STOCK` if `qty > min`, `LOW_STOCK` if `0 < qty <= min`, `OUT_OF_STOCK` if `qty == 0`.
   - Getters and setters with validation.
 
-### 2.2 `Student` (Author: Sedhat)
+### 2.2 `Student` (Author: Sidak)
 Represents a registered college student eligible to request inventory items.
 - **Fields:**
   - `private String studentId` (Unique ID, e.g., `"STU-1001"`)
@@ -68,7 +68,7 @@ Represents a registered college student eligible to request inventory items.
 - **Constructors:**
   - `public Student(String studentId, String studentName, String rollNumber, String department, String email, String phoneNumber)`
 
-### 2.3 `DemandRecord` (Author: Sedhat)
+### 2.3 `DemandRecord` (Author: Sidak)
 Represents a student's demand/request for an inventory item.
 - **Fields:**
   - `private String demandId` (Unique ID, e.g., `"DMD-1001"`)
@@ -221,7 +221,7 @@ public interface PredictionRepository {
 - `Inventory adjustStock(String itemId, int newQuantity, String reason)`
   - *Business Rule:* Non-negative quantity. Sets new stock, records `STOCK_ADJUSTED` with delta and justification.
 
-### 4.2 `StudentService` (Author: Sedhat)
+### 4.2 `StudentService` (Author: Sidak)
 - `Student addStudent(String studentId, String studentName, String rollNumber, String department, String email, String phone)`
   - *Validation:* Unique `studentId`, unique `rollNumber`, valid email, valid phone.
 - `List<Student> getAllStudents()`
@@ -232,7 +232,7 @@ public interface PredictionRepository {
 - `boolean deleteStudent(String studentId)`
   - *Business Rule:* Rejects deletion if dependent demand records exist.
 
-### 4.3 `DemandService` (Author: Sedhat)
+### 4.3 `DemandService` (Author: Sidak)
 - `DemandRecord submitDemand(String studentId, String itemId, int requestedQuantity, String remarks)`
   - *Validation:* Verifies `studentId` and `itemId` exist. Strictly positive `requestedQuantity`. Sets status to `PENDING`. Does **not** modify inventory stock.
 - `DemandRecord issueDemand(String demandId, String adminRemarks)`

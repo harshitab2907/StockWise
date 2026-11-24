@@ -6,7 +6,7 @@ import java.util.Optional;
 
 /**
  * Contract for student persistence operations.
- * Assigned to: Janvi / Sedhat
+ * Assigned to: Janvi / Sidak
  */
 public interface StudentRepository {
     Student save(Student student);

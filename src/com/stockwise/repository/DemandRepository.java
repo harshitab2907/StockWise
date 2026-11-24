@@ -7,7 +7,7 @@ import java.util.Optional;
 
 /**
  * Contract for student demand request persistence.
- * Assigned to: Janvi / Sedhat
+ * Assigned to: Janvi / Sidak
  */
 public interface DemandRepository {
     DemandRecord save(DemandRecord demand);

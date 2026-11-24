@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 /**
  * In-memory thread-safe implementation of StudentRepository.
- * Assigned to: Janvi / Sedhat
+ * Assigned to: Janvi / Sidak
  */
 public class InMemoryStudentRepository implements StudentRepository {
     private final Map<String, Student> studentStore = new LinkedHashMap<>();

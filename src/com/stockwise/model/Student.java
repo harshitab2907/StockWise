@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 /**
  * Represents a student registered in the college inventory system.
- * Assigned to: Sedhat (Student Management)
+ * Assigned to: Sidak (Student Management)
  */
 public class Student {
     private String studentId;

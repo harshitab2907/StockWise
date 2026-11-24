@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  * Service managing student registration, profile updates, and query operations.
- * Assigned to: Sedhat (Student Management)
+ * Assigned to: Sidak (Student Management)
  */
 public class StudentService {
 
