@@ -1,0 +1,44 @@
+# Bytecode and build directories
+*.class
+bin/
+out/
+target/
+build/
+
+# Package formats
+*.jar
+*.war
+*.ear
+
+# macOS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.metadata
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+
+# Logs and scratch
+*.log
+*.tmp
